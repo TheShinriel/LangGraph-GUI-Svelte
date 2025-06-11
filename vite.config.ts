@@ -8,7 +8,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 const backendUrls = {
-	development: 'http://lang.coolify.local',
+	development: 'http://localhost:5000',
 	production: 'http://lang.coolify.local'
 } as const;
 
