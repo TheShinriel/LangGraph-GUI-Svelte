@@ -8,8 +8,8 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 const backendUrls = {
-	development: 'http://localhost:5000',
-	production: 'http://yourdomain.com'
+	development: 'http://lang.coolify.local',
+	production: 'http://lang.coolify.local'
 } as const;
 
 type BackendUrlMode = keyof typeof backendUrls;
@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
             allowedHosts: [
                 'localhost',
                 '127.0.0.1',
-                'yourdomain.com',
+                'lang.coolify.local',
             ],
 		},
 		define: {
